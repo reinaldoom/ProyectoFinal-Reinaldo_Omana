@@ -244,6 +244,7 @@ input[type=reset]:hover{
 /* mq de celulares */
 @media screen and (min-width: 480px){
 
+    /* logo de la empresa */
     header a img{
         width: 80%;
     }
@@ -275,6 +276,7 @@ input[type=reset]:hover{
 
 @media screen and (min-width:800px){
 
+    /* logo de la empresa */
     header a img{
         width: 100%;
     }
