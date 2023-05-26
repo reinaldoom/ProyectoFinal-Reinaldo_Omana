@@ -35,6 +35,11 @@ header{
     background-color: whitesmoke;
 }
 
+header a img{
+    width: 50%;
+    display: block;
+}
+
 /* --------------------------------------------------------------------------- */
 /* estilo del menu */
 .navbar-nav a:hover{
@@ -239,6 +244,10 @@ input[type=reset]:hover{
 /* mq de celulares */
 @media screen and (min-width: 480px){
 
+    header a img{
+        width: 80%;
+    }
+
     /* estilo de las imagenes del html servicios */
     .contenedor-img-partners{
         grid-template-columns: repeat(2, 1fr);
@@ -265,6 +274,10 @@ input[type=reset]:hover{
 /* mq de tablet */
 
 @media screen and (min-width:800px){
+
+    header a img{
+        width: 100%;
+    }
 
     /* estilo de contenedores del html nosotros */    
     .conte-texto-nosotros{
