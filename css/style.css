@@ -26,22 +26,20 @@ img {
 }
 
 /* --------------------------------------------------------------------------- */
-/* estilos de general del header */
-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+/* estilos de general del nav */
+nav {
     background-color: whitesmoke;
 }
 
-header a img {
+nav a img {
     width: 50%;
     display: block;
 }
 
-/* --------------------------------------------------------------------------- */
-/* estilo del menu */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
 .navbar-nav a:hover {
     color: whitesmoke;
     background-color: #114bb6;
@@ -250,7 +248,7 @@ input[type=reset]:hover {
 @media screen and (min-width: 480px) {
 
     /* logo de la empresa */
-    header a img {
+    nav a img {
         width: 80%;
     }
 
@@ -284,7 +282,7 @@ input[type=reset]:hover {
 @media screen and (min-width:800px) {
 
     /* logo de la empresa */
-    header a img {
+    nav a img {
         width: 100%;
     }
 
