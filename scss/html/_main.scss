@@ -1,0 +1,174 @@
+@import "../utilidades/vars";
+
+main {
+    color: $bg-whitesmoke;
+
+    // h1 general de todos los html //
+    h1 {
+        padding-top: 1rem;
+        padding-left: 1rem;
+        text-align: left;
+    }
+
+    //html index //
+    .texto-index {
+        margin: 1rem;
+        text-align: justify;
+    }
+
+    // html nosotros //
+    .conte-texto-nosotros {
+        text-align: justify;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    // html servicios //
+    .contenedor-servicios {
+        text-align: justify;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-consultoria {
+        order: -5;
+        padding-bottom: 1rem;
+    }
+
+    .conte-consultoria {
+        order: -4;
+        padding-bottom: 1rem;
+    }
+
+    .img-seguridad {
+        order: -3;
+        padding-bottom: 1rem;
+    }
+
+    .conte-seguridad {
+        order: -2;
+        padding-bottom: 1rem;
+    }
+
+    .img-infraestructura {
+        order: -1;
+        padding-bottom: 1rem;
+    }
+
+    .conte-infraestructura {
+        order: 0;
+        padding-bottom: 1rem;
+    }
+
+    //html socios//
+    .contenedor-img-partners {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        justify-items: center;
+        align-items: center;
+        row-gap: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .texto-socios {
+        text-align: justify;
+        margin: 1rem;
+    }
+
+    //html contacto//
+    //formulario //
+    .container {
+        border-radius: 5px;
+        background-color: $bg-whitesmoke;
+        padding: 20px;
+        color: $bg-negro;
+
+        form {
+
+            input[type=text],
+            select,
+            textarea {
+                width: 80%;
+                padding: 1px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                resize: vertical;
+            }
+
+            input[type=email],
+            select,
+            textarea {
+                width: 80%;
+                padding: 1px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                resize: vertical;
+            }
+
+            // Aplica estilo a la etiqueta para que se muestre junto a las entradas //
+            label {
+                display: inline-block;
+            }
+
+            //Estilo al botón de enviar//
+            input[type=submit] {
+                background-color: $bg-azul;
+                color: $bg-whitesmoke;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+
+            // Estilo al botón de reset //
+            input[type=reset]:hover {
+                background-color: $bg-azul;
+                color: $bg-whitesmoke;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+
+            // Estilo del contenedor //
+            // Columna flotante para etiquetas: 25% de ancho //
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+
+            // Columna flotante para entradas: 75% de ancho //
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+        }
+    }
+
+    // mapa //
+    .encuentranos {
+        margin: 1rem;
+    }
+
+    .iframe-contacto {
+        max-width: 100%;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .iframe-contacto {
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}

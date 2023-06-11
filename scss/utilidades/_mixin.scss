@@ -1,0 +1,188 @@
+//import
+@import "vars";
+
+// mixin sin parametros body y con variables
+@mixin flex-body {
+    background-color: $bg-azul;
+    font-family: $tipogra-principal;
+    display: flex;
+    flex-direction: column;
+    min-height: $med-principal;
+}
+
+// mixin sin parametros header-nav
+@mixin header-nav {
+    background-color: $bg-whitesmoke;
+
+    a img {
+        width: $med-logo-small;
+        display: block;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    .navbar-nav a:hover {
+        color: $bg-whitesmoke;
+        background-color: $bg-azul;
+        border-radius: 10px;
+    }
+}
+
+// mixin sin parametros footer y con variables 
+@mixin footer-mixin {
+    background-color: $bg-whitesmoke;
+    margin-top: auto;
+    text-align: center;
+}
+
+// mixin sin parametros para celulares 
+@mixin responsive-celular {
+    @media screen and(min-width: 480px) {
+        nav a img {
+            width: $med-logo-medium;
+        }
+
+        /* estilo de las imagenes del html servicios */
+        main {
+            .contenedor-img-partners {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            // html contacto //
+            .container {
+                form {
+                    input[type=submit] {
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+
+        /* estilo de footer */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+// mixin sin parametros para tablet 
+@mixin responsive-tablet {
+    @media screen and (min-width:800px) {
+
+        /* logo de la empresa */
+        nav a img {
+            width: $med-logo-big
+        }
+
+        /* main tablet nesting */
+        main {
+
+            // html nosotros//
+            .conte-texto-nosotros {
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1.5fr 0.5fr;
+                column-gap: 1rem;
+                row-gap: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            // html servicios//
+            .contenedor-servicios {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr 1fr;
+                column-gap: 1rem;
+                row-gap: 2rem;
+                padding-left: 1rem;
+            }
+
+            .img-consultoria {
+                order: none;
+                padding-bottom: 1rem;
+            }
+
+            // html socios //
+            .contenedor-img-partners {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+
+            // html contacto //
+            .iframe-contacto {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+        }
+    }
+}
+
+// mixin sin parametros para desktop
+@mixin responsive-desktop {
+    @media screen and (min-width:1024px) {
+
+        /* main destokp nesting */
+        main {
+
+            // html de nosotros //
+            .conte-texto-nosotros {
+                grid-template-columns: 2fr 1fr;
+            }
+
+            // html de servicios //
+            .contenedor-servicios {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+
+                .img-consultoria {
+                    order: -5;
+                    padding-bottom: 1rem;
+                }
+
+                .conte-consultoria {
+                    order: -2;
+                    padding-bottom: 1rem;
+                }
+
+                .img-seguridad {
+                    order: -4;
+                    padding-bottom: 1rem;
+                }
+
+                .conte-seguridad {
+                    order: -1;
+                    padding-bottom: 1rem;
+                }
+
+                .img-infraestructura {
+                    order: -3;
+                    padding-bottom: 1rem;
+                }
+
+                .conte-infraestructura {
+                    order: 0;
+                    padding-bottom: 1rem;
+                }
+            }
+
+            // html de socios //
+            .contenedor-img-partners {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            // html de contactos //
+            .iframe-contacto {
+                padding-left: 5rem;
+                padding-right: 5rem;
+            }
+        }
+    }
+}

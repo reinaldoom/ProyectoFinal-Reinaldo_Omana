@@ -1,0 +1,22 @@
+// import 
+@import "utilidades/mixin";
+
+//BODY 
+@import "html/body";
+/* ------------------------------------------------------------------ */
+/* NAV */
+@import "html/header";
+/* ------------------------------------------------------------------ */
+/* MAIN */
+@import"html/main";
+/* ------------------------------------------------------------------- */
+/* FOOTER */
+@import "html/footer";
+/* ------------------------------------------------------------------ */
+/* RESPONSIVE CON MIXIN */
+/* mq de celulares */
+@include responsive-celular;
+/* mq para tablet */
+@include responsive-tablet;
+/* mq de desktop */
+@include responsive-desktop

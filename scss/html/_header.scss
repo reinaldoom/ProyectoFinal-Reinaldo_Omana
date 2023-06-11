@@ -1,0 +1,5 @@
+@import "../utilidades/mixin";
+
+nav {
+    @include header-nav;
+}

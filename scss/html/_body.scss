@@ -1,0 +1,26 @@
+//import
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------------*/
+/* BODY */
+body {
+    @include flex-body;
+}
+
+p {
+    margin: 0;
+    padding: .5rem 0;
+}
+
+img {
+    width: $ancho-img;
+    display: block;
+}

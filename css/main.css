@@ -1,0 +1,241 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* --------------------------*/
+/* BODY */
+body {
+  background-color: #114bb6;
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+p {
+  margin: 0;
+  padding: .5rem 0; }
+
+img {
+  width: 100%;
+  display: block; }
+
+/* ------------------------------------------------------------------ */
+/* NAV */
+nav {
+  background-color: whitesmoke; }
+  nav a img {
+    width: 60%;
+    display: block; }
+  nav .navbar-collapse {
+    flex-grow: 0; }
+  nav .navbar-nav a:hover {
+    color: whitesmoke;
+    background-color: #114bb6;
+    border-radius: 10px; }
+
+/* ------------------------------------------------------------------ */
+/* MAIN */
+main {
+  color: whitesmoke; }
+  main h1 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    text-align: left; }
+  main .texto-index {
+    margin: 1rem;
+    text-align: justify; }
+  main .conte-texto-nosotros {
+    text-align: justify;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  main .contenedor-servicios {
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr; }
+  main .img-consultoria {
+    order: -5;
+    padding-bottom: 1rem; }
+  main .conte-consultoria {
+    order: -4;
+    padding-bottom: 1rem; }
+  main .img-seguridad {
+    order: -3;
+    padding-bottom: 1rem; }
+  main .conte-seguridad {
+    order: -2;
+    padding-bottom: 1rem; }
+  main .img-infraestructura {
+    order: -1;
+    padding-bottom: 1rem; }
+  main .conte-infraestructura {
+    order: 0;
+    padding-bottom: 1rem; }
+  main .contenedor-img-partners {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+    padding-bottom: 1rem; }
+  main .texto-socios {
+    text-align: justify;
+    margin: 1rem; }
+  main .container {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    color: black; }
+    main .container form input[type=text],
+    main .container form select,
+    main .container form textarea {
+      width: 80%;
+      padding: 1px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical; }
+    main .container form input[type=email],
+    main .container form select,
+    main .container form textarea {
+      width: 80%;
+      padding: 1px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical; }
+    main .container form label {
+      display: inline-block; }
+    main .container form input[type=submit] {
+      background-color: #114bb6;
+      color: whitesmoke;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right; }
+    main .container form input[type=reset]:hover {
+      background-color: #114bb6;
+      color: whitesmoke;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right; }
+    main .container form .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px; }
+    main .container form .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px; }
+  main .encuentranos {
+    margin: 1rem; }
+  main .iframe-contacto {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  main .iframe-contacto iframe {
+    width: 100%;
+    height: 400px; }
+
+/* ------------------------------------------------------------------- */
+/* FOOTER */
+footer .footer-redes-sociales {
+  margin-right: 1rem; }
+
+footer .footer-text {
+  margin-left: 1rem; }
+
+footer {
+  background-color: whitesmoke;
+  margin-top: auto;
+  text-align: center; }
+
+/* ------------------------------------------------------------------ */
+/* RESPONSIVE CON MIXIN */
+/* mq de celulares */
+@media screen and (min-width: 480px) {
+  nav a img {
+    width: 75%; }
+  /* estilo de las imagenes del html servicios */
+  main .contenedor-img-partners {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  main .container form input[type=submit] {
+    width: 100%;
+    margin-top: 0; }
+  /* estilo de footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
+
+/* mq para tablet */
+@media screen and (min-width: 800px) {
+  /* logo de la empresa */
+  nav a img {
+    width: 100%; }
+  /* main tablet nesting */
+  main .conte-texto-nosotros {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding-bottom: 1rem; }
+  main .contenedor-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    padding-left: 1rem; }
+  main .img-consultoria {
+    order: none;
+    padding-bottom: 1rem; }
+  main .contenedor-img-partners {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+  main .iframe-contacto {
+    padding-left: 3rem;
+    padding-right: 3rem; } }
+
+/* mq de desktop */
+@media screen and (min-width: 1024px) {
+  /* main destokp nesting */
+  main .conte-texto-nosotros {
+    grid-template-columns: 2fr 1fr; }
+  main .contenedor-servicios {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; }
+    main .contenedor-servicios .img-consultoria {
+      order: -5;
+      padding-bottom: 1rem; }
+    main .contenedor-servicios .conte-consultoria {
+      order: -2;
+      padding-bottom: 1rem; }
+    main .contenedor-servicios .img-seguridad {
+      order: -4;
+      padding-bottom: 1rem; }
+    main .contenedor-servicios .conte-seguridad {
+      order: -1;
+      padding-bottom: 1rem; }
+    main .contenedor-servicios .img-infraestructura {
+      order: -3;
+      padding-bottom: 1rem; }
+    main .contenedor-servicios .conte-infraestructura {
+      order: 0;
+      padding-bottom: 1rem; }
+  main .contenedor-img-partners {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  main .iframe-contacto {
+    padding-left: 5rem;
+    padding-right: 5rem; } }

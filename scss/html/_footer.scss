@@ -1,0 +1,14 @@
+@import"../utilidades/mixin";
+@import"../utilidades/extend";
+
+footer {
+    @include footer-mixin;
+
+    .footer-text {
+        @extend %footer-left;
+    }
+
+    .footer-redes-sociales {
+        @extend %footer-right;
+    }
+}
