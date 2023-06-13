@@ -50,16 +50,6 @@
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
             }
-
-            // html contacto //
-            .container {
-                form {
-                    input[type=submit] {
-                        width: 100%;
-                        margin-top: 0;
-                    }
-                }
-            }
         }
 
         /* estilo de footer */
@@ -117,8 +107,8 @@
 
             // html contacto //
             .iframe-contacto {
-                padding-left: 3rem;
-                padding-right: 3rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
         }
     }

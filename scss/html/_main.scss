@@ -81,9 +81,9 @@ main {
     //html contacto//
     //formulario //
     .container {
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: $bg-whitesmoke;
-        padding: 20px;
+        padding: 15px;
         color: $bg-negro;
 
         form {
@@ -116,7 +116,7 @@ main {
             }
 
             //Estilo al botón de enviar//
-            input[type=submit] {
+            input[type=submit]:hover {
                 background-color: $bg-azul;
                 color: $bg-whitesmoke;
                 border: none;
@@ -158,8 +158,8 @@ main {
     }
 
     .iframe-contacto {
-        max-width: 100%;
-        margin: 0 auto;
+        max-width: 78%;
+        margin: auto;
         padding-bottom: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;

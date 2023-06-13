@@ -86,9 +86,9 @@ main {
     text-align: justify;
     margin: 1rem; }
   main .container {
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: whitesmoke;
-    padding: 20px;
+    padding: 15px;
     color: black; }
     main .container form input[type=text],
     main .container form select,
@@ -110,7 +110,7 @@ main {
       resize: vertical; }
     main .container form label {
       display: inline-block; }
-    main .container form input[type=submit] {
+    main .container form input[type=submit]:hover {
       background-color: #114bb6;
       color: whitesmoke;
       border: none;
@@ -135,8 +135,8 @@ main {
   main .encuentranos {
     margin: 1rem; }
   main .iframe-contacto {
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 78%;
+    margin: auto;
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -167,9 +167,6 @@ footer {
   main .contenedor-img-partners {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); }
-  main .container form input[type=submit] {
-    width: 100%;
-    margin-top: 0; }
   /* estilo de footer */
   footer {
     display: flex;
@@ -204,8 +201,8 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   main .iframe-contacto {
-    padding-left: 3rem;
-    padding-right: 3rem; } }
+    padding-left: 1rem;
+    padding-right: 1rem; } }
 
 /* mq de desktop */
 @media screen and (min-width: 1024px) {
