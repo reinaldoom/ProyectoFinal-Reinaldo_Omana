@@ -21,6 +21,29 @@ main {
         text-align: justify;
         padding-left: 1rem;
         padding-right: 1rem;
+
+        .texto-mision {
+            background-color: $bg-whitesmoke;
+            color: $bg-negro;
+            margin-top: 1rem;
+            padding: 1rem;
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .texto-vision {
+            background-color: $bg-whitesmoke;
+            color: $bg-negro;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            h2 {
+                text-align: center;
+            }
+        }
     }
 
     // html servicios //

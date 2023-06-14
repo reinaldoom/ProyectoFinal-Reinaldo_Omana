@@ -50,6 +50,21 @@ main {
     text-align: justify;
     padding-left: 1rem;
     padding-right: 1rem; }
+    main .conte-texto-nosotros .texto-mision {
+      background-color: whitesmoke;
+      color: black;
+      margin-top: 1rem;
+      padding: 1rem; }
+      main .conte-texto-nosotros .texto-mision h2 {
+        text-align: center; }
+    main .conte-texto-nosotros .texto-vision {
+      background-color: whitesmoke;
+      color: black;
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+      main .conte-texto-nosotros .texto-vision h2 {
+        text-align: center; }
   main .contenedor-servicios {
     text-align: justify;
     padding-right: 1rem;
@@ -183,10 +198,14 @@ footer {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
-    padding-bottom: 1rem; }
+    grid-template-rows: 1fr 0.5fr;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem; }
+    main .conte-texto-nosotros .texto-vision {
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: initial; }
   main .contenedor-servicios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -208,7 +227,18 @@ footer {
 @media screen and (min-width: 1024px) {
   /* main destokp nesting */
   main .conte-texto-nosotros {
-    grid-template-columns: 2fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr; }
+    main .conte-texto-nosotros .img-nosotros {
+      width: 600px;
+      height: auto;
+      justify-self: center; }
+    main .conte-texto-nosotros .texto-mision {
+      height: inherit;
+      margin-left: 1rem; }
+    main .conte-texto-nosotros .texto-vision {
+      height: inherit;
+      margin-right: 1rem; }
   main .contenedor-servicios {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto; }

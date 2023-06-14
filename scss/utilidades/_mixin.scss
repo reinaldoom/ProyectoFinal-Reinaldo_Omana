@@ -78,10 +78,16 @@
                 height: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1.5fr 0.5fr;
-                column-gap: 1rem;
-                row-gap: 1rem;
+                grid-template-rows: 1fr 0.5fr;
+                gap: 1rem;
                 padding-bottom: 1rem;
+                margin-bottom: 1rem;
+
+                .texto-vision {
+                    padding: 1rem;
+                    margin-top: 1rem;
+                    margin-bottom: initial;
+                }
             }
 
             // html servicios//
@@ -123,7 +129,25 @@
 
             // html de nosotros //
             .conte-texto-nosotros {
-                grid-template-columns: 2fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 0.5fr;
+                
+                .img-nosotros{
+                    width: 600px;
+                    height: auto;
+                    justify-self: center;
+                }
+
+                .texto-mision {
+                    height: inherit;
+                    margin-left: 1rem;
+                }
+
+                .texto-vision {
+                    height: inherit;
+                    margin-right: 1rem;
+                }
+               
             }
 
             // html de servicios //
