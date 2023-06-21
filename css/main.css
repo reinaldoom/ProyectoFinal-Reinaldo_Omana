@@ -159,6 +159,24 @@ main {
     width: 100%;
     height: 400px; }
 
+section {
+  place-items: center; }
+  section img {
+    border-radius: 315px 315px 315px 315px; }
+  section .texto-index2 {
+    color: whitesmoke;
+    animation: typing 2s steps(50), step-end infinite alternate;
+    white-space: nowrap;
+    width: 21ch;
+    overflow: hidden;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
 /* ------------------------------------------------------------------- */
 /* FOOTER */
 footer .footer-redes-sociales {
@@ -182,6 +200,11 @@ footer {
   main .contenedor-img-partners {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); }
+  /* estilo de section del index*/
+  section img {
+    border-radius: 0px 315px 315px 0px; }
+  section .texto-index2 {
+    font-size: 1.5rem; }
   /* estilo de footer */
   footer {
     display: flex;
@@ -221,7 +244,14 @@ footer {
     grid-template-rows: repeat(2, 1fr); }
   main .iframe-contacto {
     padding-left: 1rem;
-    padding-right: 1rem; } }
+    padding-right: 1rem; }
+  section {
+    display: flex; }
+    section img {
+      width: auto; }
+    section .texto-index2 {
+      margin-left: auto;
+      margin-right: auto; } }
 
 /* mq de desktop */
 @media screen and (min-width: 1024px) {
@@ -265,4 +295,8 @@ footer {
     grid-template-rows: repeat(3, 1fr); }
   main .iframe-contacto {
     padding-left: 5rem;
-    padding-right: 5rem; } }
+    padding-right: 5rem; }
+  section .texto-index2 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2rem; } }

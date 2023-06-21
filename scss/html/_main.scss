@@ -195,3 +195,28 @@ main {
         }
     }
 }
+
+section {
+    place-items: center;
+
+    img {
+        border-radius: 315px 315px 315px 315px;
+    }
+
+    .texto-index2 {
+        color: $bg-whitesmoke;
+        animation: typing 2s steps(50), step-end infinite alternate;
+        white-space: nowrap;
+        width: 21ch;
+        overflow: hidden;
+        margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+}

@@ -52,6 +52,17 @@
             }
         }
 
+        /* estilo de section del index*/
+        section {
+            img {
+                border-radius: 0px 315px 315px 0px;
+            }
+
+            .texto-index2 {
+                font-size: 1.5rem;
+            }
+        }
+
         /* estilo de footer */
         footer {
             display: flex;
@@ -117,6 +128,19 @@
                 padding-right: 1rem;
             }
         }
+
+        section {
+            display: flex;
+
+            img {
+                width: auto;
+            }
+
+            .texto-index2 {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
 }
 
@@ -131,8 +155,8 @@
             .conte-texto-nosotros {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 0.5fr;
-                
-                .img-nosotros{
+
+                .img-nosotros {
                     width: 600px;
                     height: auto;
                     justify-self: center;
@@ -147,7 +171,7 @@
                     height: inherit;
                     margin-right: 1rem;
                 }
-               
+
             }
 
             // html de servicios //
@@ -198,5 +222,15 @@
                 padding-right: 5rem;
             }
         }
+
+        section {
+            .texto-index2 {
+                white-space: nowrap;
+                overflow: hidden;
+                font-size: 2rem;
+
+            }
+        }
     }
+
 }
