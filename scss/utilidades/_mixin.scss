@@ -10,6 +10,13 @@
     min-height: $med-principal;
 }
 
+//mixin nav-scroll
+@mixin nav-scroll {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 // mixin sin parametros header-nav
 @mixin header-nav {
     background-color: $bg-whitesmoke;
@@ -28,6 +35,18 @@
         background-color: $bg-azul;
         border-radius: 10px;
     }
+}
+
+// subtitulos de html nosotros
+@mixin nosotros-h2 {
+    background-color: $bg-azul;
+    color: $bg-whitesmoke;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0.3rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 // mixin sin parametros footer y con variables 
@@ -49,6 +68,10 @@
             .contenedor-img-partners {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
+            }
+
+            .conte-texto-nosotros img {
+                border-radius: 0px 0px 0px 0px;
             }
         }
 
@@ -157,7 +180,7 @@
                 grid-template-rows: 1fr 0.5fr;
 
                 .img-nosotros {
-                    width: 600px;
+                    width: auto;
                     height: auto;
                     justify-self: center;
                 }

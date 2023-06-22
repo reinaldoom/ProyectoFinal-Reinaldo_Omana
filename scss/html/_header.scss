@@ -1,5 +1,9 @@
 @import "../utilidades/mixin";
 
+.navbar {
+    @include nav-scroll
+}
+
 nav {
     @include header-nav;
 }
