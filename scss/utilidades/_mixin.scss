@@ -236,7 +236,8 @@
             // html de socios //
             .contenedor-img-partners {
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding-bottom: 0;
             }
 
             // html de contactos //
